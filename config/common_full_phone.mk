@@ -9,4 +9,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
 
 $(call inherit-product, vendor/aicp/config/telephony.mk)
-$(call inherit-product, vendor/aicp/config/rr.mk)
