@@ -1,44 +1,20 @@
 # Required packages
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    SpareParts \
-#    LockClock
+    SpareParts
 
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
     PhaseBeam \
-    ThemePicker \
-    WallpaperPicker2
-
-# su
-PRODUCT_PACKAGES += \
-    adb_root
-#ifeq ($(WITH_SU),true)
-#PRODUCT_PACKAGES += \
-#    su
-#endif
+    ThemePicker
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    BluetoothExt \
-    Email \
-    Etar \
-    ExactCalculator \
-    Exchange2
-#    Launcher3Dark
-
-# MusicFX
-PRODUCT_PACKAGES += \
-    MusicFX
+    BluetoothExt
 
 # Phonograph
 PRODUCT_PACKAGES += \
     Phonograph
-
-# Jelly
-PRODUCT_PACKAGES += \
-    Jelly
 
 # OmniJaws
 PRODUCT_PACKAGES += \
@@ -105,12 +81,6 @@ PRODUCT_PACKAGES += \
 # Bootanimation include
 PRODUCT_PACKAGES += \
     bootanimation.zip
-
-# AICP OTA
-ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
-PRODUCT_PACKAGES +=  \
-   Updater
-endif
 
 # AICP packages
 PRODUCT_PACKAGES += \
